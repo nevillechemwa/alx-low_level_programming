@@ -1,17 +1,17 @@
 #include "main.h"
 
 /**
- * print_rev - printing a sting in reverse
- * @s: a string to print
- * Return: void
+ * print_rev - a function that prints a string, in reverse
+ * @s: an input string
+ * Return: Always 0
  */
 void print_rev(char *s)
 {
 	int len = 0;
 
-	while (s([len]) !+ '\0')
+	while (s[len] != '\0')
 		len++;
-	while(len)
+	while (len)
 		_putchar(s[--len]);
 	_putchar('\n');
 }
