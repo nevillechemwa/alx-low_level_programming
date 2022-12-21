@@ -2,20 +2,18 @@
 
 /**
  * string_toupper - Changes all lowercase letters to uppercase
- * @p: an input string
+ * @s: an input string
  * Return: char var
  */
 char *string_toupper(char *s)
 {
-	int a = 0;
+	char *start = s;
 
-	while (p[a])
+	while (*s)
 	{
-		if (p[a] >= 97 && p[a] <= 122)
-		{
-			p[a] -= 32;
-		}
-		a++;
+		if (*s >= 'a' && *s <= 'z')
+			*s -= 32;
+		s++;
 	}
-	return (p);
+	return (start);
 }
