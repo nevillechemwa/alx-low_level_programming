@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * tring_toupper - Changes all lowercase letters to uppercase
+ * string_toupper - Changes all lowercase letters to uppercase
  * @p: an input string
  * Return: char var
  */
