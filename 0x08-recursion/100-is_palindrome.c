@@ -25,7 +25,7 @@ int check_palindrome(char *s)
 	if (*s == s[l])
 	{
 		s++;
-	l--;
+		l--;
 	}
 	else
 	{
@@ -42,7 +42,9 @@ int check_palindrome(char *s)
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
+	{
 		return (0);
+	}
 	s++;
 	return (_strlen_recursion(s) + 1);
 }
