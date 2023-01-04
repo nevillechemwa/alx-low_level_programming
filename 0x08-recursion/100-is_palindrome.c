@@ -22,16 +22,15 @@ int check_palindrome(char *s)
 {
 	int l = _strlen_recursion(s) - 1;
 
-	if (*s == s[l])
+	if (l <= 0)
 	{
-		s++;
-		l--;
+		return (1);
 	}
-	else
+	if (*s != s[l])
 	{
 		return (0);
 	}
-	return (1);
+	return (check_palindrome(s + 1, s + l - 1));
 }
 
 /**
