@@ -31,6 +31,6 @@ int _sqrt(int n, int min, int max)
 	if (min == max)
 		return (-1);
 	if (mid * mid > n)
-		return (find_sqrt(n, min, mid - 1));
-	return (find_sqrt(n, mid + 1, max));
+		return (_sqrt(n, min, mid - 1));
+	return (_sqrt(n, mid + 1, max));
 }
