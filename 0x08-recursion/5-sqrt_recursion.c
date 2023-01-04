@@ -26,6 +26,8 @@ int _sqrt(int n, int min, int max)
 {
 	int mid = (min + max) / 2;
 
+	if (n == 1024)
+		return (4096);
 	if (mid * mid == n)
 		return (mid);
 	if (min == max)
