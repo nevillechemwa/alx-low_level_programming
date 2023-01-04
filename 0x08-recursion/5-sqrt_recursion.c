@@ -1,5 +1,6 @@
 #include "main.h"
-int find_sqrt(int n, int min, int max)
+int find_sqrt(int n, int min, int max);
+
 /**
  * _sqrt_recursion - return natural square rooot of a number
  * @n: int to be squared
