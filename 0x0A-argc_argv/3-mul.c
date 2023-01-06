@@ -1,16 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - A program that multiplies two numbers
+ * main - Entry point
  *
- * @argc: The arguments' counter
- * @argv: The arguments' values
+ * @argc: incoming argument
+ * @argv: incoming argument
+ *
  * Return: Always 0 (Success)
  */
 int main(int argc, char **argv)
-{
-	int result;
+	{
+
+	 int total;
 
 	if (argc < 2)
 	{
@@ -18,7 +19,10 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	result = (int) *argv[1] * (int) *argv[2];
+	total = (int) *argv[1] * (int) *argv[2];
+
 	printf("%d\n", total);
+
 	return (0);
-}
+
+	}
