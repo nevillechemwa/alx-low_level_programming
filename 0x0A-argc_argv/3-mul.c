@@ -16,11 +16,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 	return (1);
 	}
+	else
+	{
+		int num1 = atoi(argv[1]);
+		int num2 = atoi(argv[2]);
+		int results = num1 * num2;
 
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-	int results = num1 * num2;
-
-	printf("%d\n", results);
-	return (0);
+		printf("%d\n", results);
+		return (0);
+	}
 }
