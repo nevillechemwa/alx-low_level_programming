@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * argstostr - concatenates all the arguments of the program
@@ -19,7 +20,7 @@ char *argstostr(int ac, char **av)
 		return NULL;
 
 	for (i = 0; i < ac; i++)
-		en += strlen(av[i]) + 1;  // +1 for the \n character
+		len += strlen(av[i]) + 1;  // +1 for the \n character
 	if (s == NULL)
 		return NULL;
 
