@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -81,9 +81,9 @@ char **strtow(char *str)
 			}
 			words[b][c] = '\0';
 			b++;
-		      	c = 0;
-		      	length = 0;
-		      	str++;
+			c = 0;
+			length = 0;
+			str++;
 		}
 	}
 	return (words);
