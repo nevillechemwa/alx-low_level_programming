@@ -1,9 +1,10 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
  * create_array - function tht create an aray of char
- * @size: sixe of an array
+ * @size: size of an array
  * @c: character
  * Return: pointer to the array, or NULL if it fails
  */
@@ -21,7 +22,7 @@ char *create_array(unsigned int size, char c)
 	while (i < size)
 	{
 		s[i] = c;
-		i++
+		i++;
 	}
 	return (s);
 }
