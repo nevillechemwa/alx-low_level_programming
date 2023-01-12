@@ -9,9 +9,10 @@
  */
 int *array_range(int min, int max)
 {
-	int i, full;
 	int *a;
+	int i, full;
 
+	full = (max - min) + 1;
 	if (min > max)
 	{
 		return (NULL);
