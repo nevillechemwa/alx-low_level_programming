@@ -3,10 +3,11 @@
 char *_strdup(char *str);
 
 /**
- * new_dog - function with arguments
- * @name: name
- * @age: age
- * @owner:owner
+ * new_dog - function with 3 arguments
+ * @name: char type pointer
+ * @age: float type
+ * @owner: char type pointer
+ *
  * Description: creates a new dog
  * Return: NULL if fail or pointer
  */
@@ -34,11 +35,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	return (new_d);
+
 }
 
 /**
  * *_strdup - function with one argument
  * @str: string argument
+ *
  * Description: returns a pointer to allocated space in memory
  * Return: pointer
  */
