@@ -2,7 +2,8 @@
 
 /**
  * add_node - add a new node at the beginning of a list
- * @h: head of the list
+ * @head: head of the list
+ * @str: string in the struct
  * Return: the address of the new element
  */
 list_t *add_node(list_t **head, const char *str)
