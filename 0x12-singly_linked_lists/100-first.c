@@ -1,20 +1,15 @@
 #include <stdio.h>
 
-void first(void) attribute((constructor));
+void firstfunct(void) __attribute__((constructor));
 
 /**
- * first - print before the main function is executed
+ * firstfunct - print before the main function's execution
+ *
  * Return: void
  */
-void first(void)
-{
-	printf("You're beat! and yet, you must allow,\nI bore
-			my house upon my back!\n");
-}
 
-int main(void)
+void firstfunct(void)
 {
-	printf("(A tortoise, having pretty good sense of a hare's nature,
-		challenges one to a race.)\n");
-	return (0);
+	printf("You're beat! and yet, you must allow,\n"
+			"I bore my house upon my back!\n");
 }
