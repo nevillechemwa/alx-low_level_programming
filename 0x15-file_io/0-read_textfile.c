@@ -1,13 +1,13 @@
 #include "main.h"
-
 /**
- * read_textfile - reads a text file and prints
- * it to the POSIX standard output.
+ * read_textfile - this function reads a text fiole and prints it to the POSIX
  * @filename: name of the file
  * @letters: number of letters
- * Return: 0 if a file cannot be open and is NULL
+ *
+ * Return: the number of letters
  */
-size_t read_textfile(const char *filename, size_t letters)
+
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filed, r, w;
 	char *buffer = malloc(sizeof(char) * letters);
@@ -17,6 +17,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
+	/* OPEN */
 	filed = open(filename, O_RDONLY);
 
 	if (filed == -1)
@@ -24,9 +25,18 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
+	/* READ */
 	r = read(filed, buffer, letters);
 
 	if (r == -1)
+	{
+		return (0);
+	}
+
+	/* WRITE */
+	w = write(STDOUT_FILENO, buffer, r);
+
+	if (w == -1)
 	{
 		return (0);
 	}
